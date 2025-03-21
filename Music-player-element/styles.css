@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.containerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 576px;
+  height: 690px;
+  background-color: rgb(128, 19, 19);
+
+  .containerImage {
+    display: flex;
+    position: relative;
+    height: 65%;
+    width: 93%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    .principalImage {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      filter: blur(1px);
+    }
+
+    .containerImageDescription {
+      position: absolute;
+      z-index: 2;
+      top: 80%;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .containerImageText {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+
+        p,
+        h2 {
+          margin: 0 0 0 5%;
+          padding: 0;
+          font-size: 1.4rem;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: antiquewhite;
+          font-weight: bold;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+
+      .containerImageNote {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #fff; */
+
+        div {
+          width: 25%;
+          height: 65%;
+          position: relative;
+          left: 52%;
+          top: 37%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: antiquewhite;
+
+          hr {
+            width: 60%;
+            border-radius: 15px;
+
+            margin: 5%;
+            padding: 0;
+            border: 1px solid black;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .containerTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 93%;
+    /* background-color: blue; */
+
+    .containerTimeText {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      justify-content: start;
+      align-items: start;
+      /* background-color: #fff; */
+
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: antiquewhite;
+        /* background-color: red; */
+      }
+
+      .middleParagrath {
+        padding: 0 1%;
+      }
+    }
+
+    .containerTimeFigure {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      justify-content: start;
+      align-items: start;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 4;
+      /* background-color: brown; */
+
+      hr {
+        width: 100%;
+        height: 1%;
+        margin-top: 2%;
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+      }
+
+      .topLine {
+        width: 30%;
+        height: 2%;
+        border: 1.5px solid antiquewhite;
+        background-color: antiquewhite;
+        z-index: 3;
+      }
+
+      div {
+        width: 2.5%;
+        height: 25%;
+        margin-top: 1.1%;
+        margin-left: 30%;
+        border-radius: 50%;
+        position: absolute;
+        background-color: antiquewhite;
+        z-index: 2;
+      }
+    }
+  }
+
+  .containerIcons {
+    display: flex;
+    height: 15%;
+    width: 93%;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+    img {
+      width: 5%;
+      height: 25%;
+    }
+
+    #pauseIcon {
+      width: 17%;
+      height: 85%;
+    }
+  }
+}
